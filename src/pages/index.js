@@ -1,7 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
-import Layout from "./components/layout"
-import fetchData from "./examples/fetchData"
+import { StaticImage } from "gatsby-plugin-image"
+import Layout from "../components/layout"
+import AllRecipes from "../components/AllRecipes"
 import { page, text } from "./examples/home.module.css"
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <header className="Hero"></header>
       </main>
       <h1>home page</h1>
+      <AllRecipes />
     </Layout>
   )
 }
